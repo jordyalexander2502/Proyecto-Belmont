@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar - BELLMONT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <header>
+            <img src="logo.jpeg" alt="Logo BELLMONT" class="login-logo">
+            <h1>BELLMONT</h1>
+            <h3>Inicie sesión para acceder a la colección</h3>
+        </header>
+
+        <hr>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Usuario o Correo</label>
+                <input type="text" id="username" required autocomplete="username">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required autocomplete="current-password">
+            </div>
+
+            <p id="errorMessage" class="error-text"></p>
+
+            <button type="submit">INGRESAR</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

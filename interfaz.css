@@ -1,0 +1,285 @@
+/* Ya corregi el error de los tamaños en "colecciones"*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', 'Didot', 'Georgia', serif; 
+    background-color: #fcfbfa; 
+    color: #1a1a1a; 
+    line-height: 1.6;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+p, a, li, button, cite, blockquote {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; 
+    letter-spacing: 0.5px;
+}
+
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8a7355; 
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e5e0da; 
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #2c2a29;
+}
+
+header {
+    text-align: center;
+    padding: 60px 0 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 120px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #706c68;
+}
+
+nav {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    color: #4a4744;
+}
+
+nav a:hover {
+    color: #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0 60px 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #a39f9a;
+    margin-top: auto;
+}
+
+footer a {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #706c68;
+}
+
+#ofertas {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#ofertas img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover; 
+    margin-bottom: 25px;
+}
+
+#ofertas p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    color: #575451;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #1a1a1a;
+    padding: 12px 35px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #1a1a1a;
+}
+
+#colecciones {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 0 auto;
+}
+
+#colecciones article {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #f2eee9;
+    text-align: center;
+    display: block; 
+}
+
+#colecciones article h3 {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#colecciones article img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --- SOBRE NOSOTROS, fue complicado ya no le muevan nada --- */
+#nosotros {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nosotros ul {
+    list-style: none;
+}
+
+#nosotros li {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #4a4744;
+}
+
+/* --- RESEÑAS --- */
+#reseñas {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#reseñas ul {
+    list-style: none;
+    text-align: center;
+}
+
+#reseñas li {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    vertical-align: top;
+    padding: 20px;
+    text-align: center;
+}
+
+#reseñas li img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 1px solid #e5e0da;
+}
+
+#reseñas blockquote {
+    font-style: italic;
+    font-size: 14px;
+    color: #575451;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#reseñas p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#reseñas cite {
+    font-style: normal;
+    font-weight: 300;
+    color: #8a7355; 
+}
+
+#contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contacto p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #575451;
+}
+
+#contacto a {
+    font-weight: 600;
+    border-bottom: 1px solid #8a7355;
+    color: #1a1a1a;
+}
